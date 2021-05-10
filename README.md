@@ -1,2 +1,2 @@
 # Minesweeper
- (IN PROGRESS) Minesweeper game using HTML & Javascript
+ (IN PROGRESS) Minesweeper game using Javascript
