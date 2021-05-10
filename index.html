@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper Game</title>
+    <script src="functions.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="grid">
+      <header>
+        <h1>MINESWEEPER</h1>
+      </header>
+
+      <article>
+        <button id="restart" class="restart">RESTART</button>
+        <div>
+          Remaining 💣s:
+          <div id="remainingMines" style="display: inline"></div>
+        </div>
+
+        <table class="game" id="table" cellspacing="0">
+          <thead></thead>
+          <tbody id="game"></tbody>
+        </table>
+      </article>
+
+      <aside>Author?</aside>
+      <nav>
+        <div id="settings" class="settings">
+          <img
+            src="settingswheeljpg.jpg"
+            alt="wheel"
+            class="wheel"
+            onclick="settingsClick()"
+            id="wheel"
+          />
+        </div>
+        <div class="triangle"></div>
+        <div class="menu">
+          <h3>SETTINGS</h3>
+          <ul>
+            <li>#Mines: <input type="number" id="mineNumber" /></li>
+            <li>#Rows: <input type="number" id="rowsNb" /></li>
+            <li>#Columns: <input type="number" id="colsNb" /></li>
+          </ul>
+        </div>
+      </nav>
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>

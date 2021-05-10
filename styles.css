@@ -1,0 +1,145 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #23395b;
+  color: #fbfaf5;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "topbar topbar topbar topbar"
+    "ads content sidebar settings"
+    "footer footer footer footer";
+
+  /*grid-template-columns: 2fr 3fr 1fr 1fr;*/
+
+  align-items: center;
+  justify-items: center;
+}
+header {
+  grid-area: topbar;
+}
+aside {
+  grid-area: ads;
+}
+
+article {
+  grid-area: content;
+}
+nav {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
+
+nav,
+footer,
+aside,
+article,
+header {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.wheel {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 1s;
+  vertical-align: top;
+}
+.game {
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+  border: solid black;
+}
+.menu ul {
+  padding-left: 2em;
+}
+.menu ul li {
+  list-style: none;
+  display: flex;
+}
+.menu h3 {
+  text-align: center;
+  padding-top: 0.5em;
+
+  margin-top: 0;
+}
+.menu {
+  vertical-align: top;
+  background: #8ea8c3;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.menu input {
+  width: 1em;
+}
+.square {
+  resize: none;
+  text-align: center;
+  border-spacing: 0px;
+  border: solid thin black;
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  min-height: 25px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: bold;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+.blank.square {
+  background-color: gray;
+}
+.visible.square {
+  background-color: white;
+}
+.square.mine {
+  background-color: red;
+}
+.n1 {
+  color: #0038f7;
+}
+.n2 {
+  color: #00791e;
+}
+.n3 {
+  color: #ff0014;
+}
+.n4 {
+  color: #001677;
+}
+.n5 {
+  color: #810610;
+}
+.n6 {
+  color: #007c7b;
+}
+.n7 {
+  color: black;
+}
+.n8 {
+  color: gray;
+}
+.triangle {
+  position: relative;
+  left: 13%;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #8ea8c3;
+  width: 0;
+  height: 0;
+}
